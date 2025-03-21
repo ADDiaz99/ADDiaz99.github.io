@@ -13,9 +13,16 @@ function proceso() {
                 result = "Deberías cancelar la materia, para pasar necesitas: " + nota_3.toFixed(1);
                 break;
             }
-            result = "Para pasar necesitas: " + nota_3.toFixed(1) + "\nMucha suerte!"
+            result = nota_3.toFixed(1);
             break;
         }
     }
-    document.getElementById("result").innerHTML = result;
+    document.getElementById("resultText").innerHTML = result;
+    document.getElementById("resultBox").style.display = "block";
+}
+
+function fueraDeRango(minota){
+    if(minota>5 || minota<0){
+        return null;
+    }
 }
