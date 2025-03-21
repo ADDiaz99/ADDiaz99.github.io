@@ -161,7 +161,7 @@ main{
 
 .resultBox{
   font-family: gabarito;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -169,10 +169,13 @@ main{
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
-  width: 200px;
+  min-width: 200px;
+  max-width: 100%;
   padding: 40px 30px;
   display: none;
   margin-left: 60px;
+  word-wrap: break-word; /* Rompe las palabras largas */
+  overflow-wrap: break-word; /* Compatibilidad con otros navegadores */
 }
 
 
@@ -181,7 +184,7 @@ main{
 }
 
 .resultText{
-  font-size: 100px;
+  font-size: 60px;
   font-weight: bold;
   color: #F38C4A;
 }
