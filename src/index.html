@@ -13,19 +13,18 @@
     <script src="https://kit.fontawesome.com/fb6b858cb2.js" crossorigin="anonymous"></script>
   </head>
   <body class="body">
-    <header id="myHeader" class="header">
-      <div id="upperleftlogo" class="hidden">
-        <a href="https://udes.edu.co" target="_blank"><img src="/img/udes_logo.png" alt="logo1"></a>
+    <header id="myHeader" class="header lg:flex justify-center items-center">
+      <div id="upperleftlogo" class="hidden lg:block fixed left-10">
+        <a href="https://udes.edu.co" target="_blank"><img src="/img/udes_logo.png" alt="logo1" class="h-10"></a>
       </div>
       <div class="maintitle">
         <h1 class="font-[akachen] text-center text-udesblue py-5 text-3xl font-bold">¿Cuánto debo sacar?</h1>
       </div>
-      <div class="spacer"></div>
     </header>
 
     <main class="main">
       <div class="mainBox">
-        <div class="text-center text-mangodark font-gabarito mx-6 mb-2">
+        <div class="text-center text-mangodark font-gabarito mx-6 mb-2 text-lg">
           <p>Digita tus notas de primer y segundo corte, y descubre cuanto necesitas para pasar la materia.</p>
         </div>
         <div class="mainCalculator">
@@ -40,17 +39,17 @@
             </div>
             <button class="calculateButton" onclick="proceso()">¿Cuánto debo sacar?</button>
           </div>
-          <div class="hidden" id="resultBox">
-            <p class="plainText">Debes sacar:</p>
-            <h1 class="resultText" id="resultText"></h1>
-            <p class="plainText">¡Ánimo!</p>
+          <div class="hidden shadow-xl/20  text-center w-3/4 mt-5 rounded-lg py-3 md:w-1/4 md:py-6" id="resultBox">
+            <p class="font-gabarito font-bold  text-udesblue text-2xl" id="debesSacar">Debes sacar:</p>
+            <h1 class="font-gabarito text-6xl text-buttonOrange font-bold my-2 mx-2" id="resultText">2.4</h1>
+            <p class="font-gabarito font-bold  text-udesblue text-2xl" id="animo">¡Ánimo!</p>
           </div>
         </div>
       </div>
     </main>
 
     <footer class="bg-udesblue fixed bottom-0 w-screen">
-      <p class="my-2 text-center text-white font-gabarito">Diseñado por Andres D. Diaz & Lydia Sierra <span class="hidden">- 02240131056 - Universidad de Santander - SENA</span></p>
+      <p class="my-1 text-center text-white font-gabarito">Diseñado por Andres D. Diaz & Lydia Sierra <span class="hidden md:inline">- 02240131056 - Universidad de Santander - SENA</span></p>
       <!-- Target Blank es para abrir el link en una pestaña nueva -->
        <div class="text-center mb-1">
         <a href="https://www.instagram.com/andresddr99/" target="_blank" class="mr-1"><i class="fa-brands fa-square-instagram fa-2x" style="color: #ffffff;"></i></a>

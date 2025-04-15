@@ -11,7 +11,17 @@ function proceso() {
         else if(nota_1 * 0.3 + nota_2 * 0.3 + nota_3 * 0.4 >= 3){
             if(nota_3 > 5){
                 result = "Deberías cancelar la materia, para pasar necesitas: " + nota_3.toFixed(1);
+                document.getElementById("resultText").style.fontSize="20px";
+                document.getElementById("resultText").style.fontWeight="300";
+                document.getElementById("resultBox").style.paddingBlock="50px";
+                document.getElementById("debesSacar").innerText="";
+                document.getElementById("animo").innerText="";
                 break;
+            } else{
+                document.getElementById("resultText").style.fontWeight="bold";
+                document.getElementById("resultText").style.fontSize="60px";
+                document.getElementById("debesSacar").innerText="Debes sacar:";
+                document.getElementById("animo").innerText="¡Ánimo!";
             }
             result = nota_3.toFixed(1);
             break;
