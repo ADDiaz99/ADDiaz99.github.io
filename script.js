@@ -6,6 +6,11 @@ function proceso() {
     for(let nota_3 = 0; nota_3 < 8; nota_3 += 0.1){
         if(nota_1 * 0.3 + nota_2 * 0.3 >= 3){
             result = "Ya pasaste!\n";
+            document.getElementById("resultText").style.fontSize="20px";
+            document.getElementById("resultText").style.fontWeight="300";
+            document.getElementById("resultBox").style.paddingBlock="50px";
+            document.getElementById("debesSacar").innerText="";
+            document.getElementById("animo").innerText="";
         }
 
         else if(nota_1 * 0.3 + nota_2 * 0.3 + nota_3 * 0.4 >= 3){
