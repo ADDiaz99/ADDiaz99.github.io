@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Gabarito:wght@400..900&display=swap);
+@import "tailwindcss";
+@import "tailwindcss/preflight"
+@tailwind utilities;
+
+@theme{
+    --font-gabarito: "gabarito";
+    --font-akachen: "akachen";
+    --color-udesblue: #1053A0;
+    --color-mangodark: #171853;
+    --color-inputgray: #D9D9D9;
+    --color-buttonOrange: #F38C4A;
+}
+
+@utility flexcol-center{
+    @apply flex flex-col justify-center items-center;
+}
+
+@layer components{
+    .body{
+        @apply bg-[url(../img/udeshd.webp)] backdrop-blur-sm bg-white/50 bg-blend-soft-light bg-center h-dvh flex flex-col justify-center;
+    }
+
+    .main{
+        @apply bg-cover flex flex-col justify-center items-center;
+    }
+
+    .mainBox{
+        @apply bg-white mx-10 rounded-2xl shadow-lg py-4;
+    }
+
+    .header{
+        @apply mx-auto shadow-md/20 bg-white w-screen fixed top-0;
+    }
+
+    .inputBox{
+        @apply flex justify-between items-center pl-5 mt-3 h-12 w-60 bg-inputgray mx-12 rounded-xl shadow-lg/15;
+    }
+
+    .inputText{
+        @apply text-mangodark text-sm font-medium;
+    }
+
+    .inputNumber{
+        @apply bg-white text-center h-full rounded-r-xl px-2;
+    }
+    .mainCalculator{
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .calculateButton{
+        @apply bg-buttonOrange mt-5 text-center py-2 px-4 text-white rounded-lg text-sm shadow-lg/15 font-bold;
+    }
+}
+
+@font-face {
+    font-family: akachen;
+    src: url(/fonts/akaChen.ttf);
+  }
